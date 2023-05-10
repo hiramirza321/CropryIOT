@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlogBananaActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:src="@drawable/banana" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-110dp"
+                        android:gravity="center"
+                        android:text="Banana"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:id="@+id/featured"
+                    android:layout_width="170dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#E8DB6D"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="Grow Bananas from Seeds"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:gravity="center"
+                        android:text="Musa 'acuminata' and Musa 'balbisiana' are two of the species worth trying to germinate"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:gravity="center"
+                        android:text="Grow Banana in  just Six steps in your Home"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/featured_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_toRightOf="@id/featured" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="369dp"
+                android:layout_height="330dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:text="@string/banana_blog"
+                android:textAlignment="center">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/cultivation" />
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_marginTop="5dp"
+             android:padding="20dp">
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:id="@+id/dis"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                     android:textAlignment="center"
+                     android:text="Banana Diseases"
+                     android:layout_marginLeft="100dp"
+                     android:textStyle="bold"
+                     android:textSize="20sp"
+                     android:textAllCaps="true">
+
+                 </TextView>
+
+
+             <androidx.recyclerview.widget.RecyclerView
+                 android:layout_below="@+id/dis"
+                 android:id="@+id/featured_recyclerview1"
+                 android:layout_width="match_parent"
+                 android:layout_height="250dp"
+                 android:layout_marginBottom="10dp"/>
+             </RelativeLayout>
+             <TextView
+                 android:layout_width="369dp"
+                 android:layout_height="330dp"
+                 android:layout_alignParentStart="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginStart="20dp"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginTop="18dp"
+                 android:layout_marginEnd="21dp"
+                 android:layout_marginRight="20dp"
+                 android:layout_marginBottom="0dp"
+                 android:gravity="center"
+                 android:text="@string/banana_blog"
+                 android:textAlignment="center"/>
+         </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
